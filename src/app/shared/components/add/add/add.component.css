@@ -1,0 +1,37 @@
+img{
+
+    width: 200px;
+    height: 200px;
+
+  }
+  .anuncio {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #856091;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    height: 250px;
+  }
+  .ad-carretera {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateX();
+    transform: translateY(-70%);
+    background-color: #160944;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    height: 150px;
+  }
+  .ad-carretera img{
+    height: 125px;
+    width: 125px;
+  }

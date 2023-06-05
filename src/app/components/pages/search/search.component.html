@@ -1,0 +1,4 @@
+<p>firus</p>
+<div *ngFor="let i of result">
+    <app-movie-card [ngStyle]="{'color' : i.id%2==0? '#a0df6f':'#a64558'}" [img]="i.img" [nombre]="i.nombre" [resumen]="i.resumen" [id]="i.id"></app-movie-card>
+</div>

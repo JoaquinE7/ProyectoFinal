@@ -1,0 +1,18 @@
+.example-card {
+    max-width: 400px;
+    font-family: 'Bruno Ace SC', cursive;
+  }
+
+  *{
+    font-family: 'Bruno Ace SC', cursive;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+/* .images{
+  width: 350px;
+  height: 380px;
+} */
