@@ -1,0 +1,41 @@
+<div class="wrapper">
+  <div class="bodies">
+    <img src="assets/login.png" alt="" class="logo">
+    <h1> Login</h1>
+  </div>
+  <form [formGroup]="iniciarSesion" (ngSubmit)="iniciar()">
+
+ 
+  <input type="checkbox" id="checkbox" (change)="cambiar()">
+  <label for="checkbox" class="toggle">
+      <div class="bars" id="bar1"></div>
+      <div class="bars" id="bar2"></div>
+      <div class="bars" id="bar3"></div>
+  </label>
+    <div *ngIf="tipodeIngreso;else PhoneBlock">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label> 
+        <input type="password" class="form-control mb-" placeholder="Password" formControlName="password">
+      </div>
+   </div>
+
+    <ng-template #PhoneBlock>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Phone</label>
+        <input type="tel" class="form-control mb-" placeholder="Phone" formControlName="phone">
+      </div>
+    </ng-template>
+
+
+    <button type="submit" class="btn btn-primary btn-lg log-btn">Ingresar</button>
+
+  </form>
+  <p>¿Aun no tienes cuenta?</p>
+  <a [routerLink]="['/singup']">Registrar</a>
+  <div id="recaptcha-container"></div>
+
+</div>

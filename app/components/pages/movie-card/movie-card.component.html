@@ -1,0 +1,8 @@
+
+<div class="card" style="border: #FCE205 solid 3px; background-color: rgb(6, 8, 117); font-family: 'Bruno Ace SC', cursive;  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);">
+    <img src="http://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="font-family: 'Bruno Ace SC', cursive;">{{nombre}}</h5>
+      <p class="card-text">{{resumen}}</p>
+      <a (click)="setid()" [routerLink]="['/movie-details',id]" class="btn btn-primary">Ver más</a>    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="form-container">
+  <form class="a">
+    <mat-form-field appearance="outline" style="width: 300px">
+      <mat-label>Nombre:</mat-label>
+      <input matInput />
+      <mat-hint>Pista: Ethienne Lopez</mat-hint>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field appearance="outline" style="width: 300px">
+      <mat-label>E-Mail:</mat-label>
+      <input matInput />
+      <mat-hint>Pista: xxx@yyy.zzz</mat-hint>
+    </mat-form-field>
+    <br />
+    <br />
+    <p>Elija la que mas se acerque a su comentario</p>
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">Queja</mat-radio-button>
+      <mat-radio-button value="2">Sugerencia</mat-radio-button>
+      <mat-radio-button value="3">Mensaje</mat-radio-button>
+      <mat-radio-button value="4">Consulta</mat-radio-button>
+    </mat-radio-group>
+    <br />
+
+    <mat-form-field style="width: 300px" appearance="outline">
+      <mat-label>Descripcion: </mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+    <br>
+    <button type="button" class="btn btn-info">Enviar</button>
+    <div class="image-container">
+      <img src="assets/cartadeamor.jpeg" alt="Placeholder Image" />
+    </div>
+  </form>
+</div>

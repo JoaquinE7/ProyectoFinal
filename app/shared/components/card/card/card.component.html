@@ -1,0 +1,22 @@
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  </head>
+  <mat-card class="example-card card">
+    <div class="card-body">
+    <mat-card-header>
+      <mat-card-title class="card-title" style="font-family: 'Bruno Ace SC', cursive;">{{nom}}</mat-card-title>
+      <mat-card-subtitle style="font-family: 'Bruno Ace SC', cursive;">{{nom}}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="card-img images" mat-card-image [src]="img1" alt="...">
+    <mat-card-content>
+      <p class="card-text">
+        {{resume}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions style="display: block;">
+      <a [href]="link1" target="_blank" style="width: 15%"><button mat-button class="btn btn-primary">FACEBOOK</button></a>
+      <br>
+      <a [href]="link2" target="_blank" style="width: 15%"><button mat-button class="btn btn-primary">INSTAGRAM</button></a>
+    </mat-card-actions>
+  </div>
+  </mat-card> 
